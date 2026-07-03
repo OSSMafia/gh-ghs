@@ -8,12 +8,12 @@ globally active.
 
 ```
 $ ghs list
--> personal     mattylight22 <68877341+mattylight22@users.noreply.github.com>
-   work         matt-thesis <matt@use-thesis.com>
+-> personal     octocat <octocat@users.noreply.github.com>
+   work         octo-work <dev@company.com>
      pin: /Users/you/work
 
 $ ghs use work
-Now using work (matt-thesis <matt@use-thesis.com>)
+Now using work (octo-work <dev@company.com>)
 ```
 
 ## Install
@@ -55,7 +55,7 @@ or pushing as the wrong account.
 ## Always-visible active account
 
 ```sh
-ghs init zsh --install    # prompt segment: ⎇ mattylight22 (red + "≠work" on mismatch)
+ghs init zsh --install    # prompt segment: ⎇ octocat (red + "≠work" on mismatch)
 ```
 
 `ghs prompt` does no subprocess work (two file reads) and is safe to call on

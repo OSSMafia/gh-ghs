@@ -27,8 +27,8 @@ func reg() *registry.Config {
 	return &registry.Config{
 		Version: 1,
 		Profiles: map[string]registry.Profile{
-			"personal": {Username: "mattylight22", Name: "Matt Nick", Email: "personal@example.com"},
-			"work":     {Username: "matt-thesis", Name: "Matt Nick", Email: "matt@use-thesis.com"},
+			"personal": {Username: "octocat", Name: "Mona Octocat", Email: "personal@example.com"},
+			"work":     {Username: "octo-work", Name: "Mona Octocat", Email: "dev@company.com"},
 		},
 	}
 }
@@ -52,7 +52,7 @@ func TestRegenerateGolden(t *testing.T) {
 	fragWork, _ := paths.ProfileFragment("work")
 	fragPersonal, _ := paths.ProfileFragment("personal")
 	want := managedHeader +
-		"[user]\n\tname = Matt Nick\n\temail = personal@example.com\n" +
+		"[user]\n\tname = Mona Octocat\n\temail = personal@example.com\n" +
 		"\n[includeIf \"gitdir:/u/work/\"]\n\tpath = " + fragWork + "\n" +
 		"\n[includeIf \"gitdir:/u/work/oss/\"]\n\tpath = " + fragPersonal + "\n"
 	if content != want {
@@ -65,9 +65,9 @@ func TestRegenerateGolden(t *testing.T) {
 	}
 	frag := string(fragData)
 	for _, needle := range []string{
-		"email = matt@use-thesis.com",
+		"email = dev@company.com",
 		`[credential "https://github.com"]`,
-		"username = matt-thesis",
+		"username = octo-work",
 	} {
 		if !strings.Contains(frag, needle) {
 			t.Errorf("fragment missing %q:\n%s", needle, frag)
@@ -116,7 +116,7 @@ func TestEnsureSetupAndRemoveInclude(t *testing.T) {
 	}
 
 	// ghs's include shadows the original identity (real git resolution).
-	if got := gitx.GlobalGet(home, "user.email"); got != "matt@use-thesis.com" {
+	if got := gitx.GlobalGet(home, "user.email"); got != "dev@company.com" {
 		t.Errorf("global user.email = %q, want work email via include", got)
 	}
 
