@@ -12,7 +12,7 @@ func sandbox(t *testing.T) {
 func TestRoundTrip(t *testing.T) {
 	sandbox(t)
 	c := &Config{Version: 1, Profiles: map[string]Profile{
-		"work": {Username: "matt-thesis", Name: "Matt Nick", Email: "matt@use-thesis.com"},
+		"work": {Username: "octo-work", Name: "Mona Octocat", Email: "dev@company.com"},
 	}}
 	c.SetPin("work", "/home/x/work")
 	c.State.SetupGitRan = true
@@ -23,7 +23,7 @@ func TestRoundTrip(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if got.Profiles["work"].Email != "matt@use-thesis.com" {
+	if got.Profiles["work"].Email != "dev@company.com" {
 		t.Errorf("profile lost: %+v", got.Profiles)
 	}
 	if len(got.Pins) != 1 || got.Pins[0].Path != "/home/x/work" {

@@ -22,17 +22,17 @@ func TestReadHostsKeyring(t *testing.T) {
 	writeHosts(t, `github.com:
     git_protocol: https
     users:
-        mattylight22:
-    user: mattylight22
+        octocat:
+    user: octocat
 `)
 	h, err := ReadHosts()
 	if err != nil {
 		t.Fatal(err)
 	}
-	if h.Active != "mattylight22" {
-		t.Errorf("active = %q, want mattylight22", h.Active)
+	if h.Active != "octocat" {
+		t.Errorf("active = %q, want octocat", h.Active)
 	}
-	if len(h.Users) != 1 || h.Users[0] != "mattylight22" {
+	if len(h.Users) != 1 || h.Users[0] != "octocat" {
 		t.Errorf("users = %v", h.Users)
 	}
 }
