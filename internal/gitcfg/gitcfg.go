@@ -10,9 +10,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/mattylight22/gh-ghs/internal/gitx"
-	"github.com/mattylight22/gh-ghs/internal/paths"
-	"github.com/mattylight22/gh-ghs/internal/registry"
+	"github.com/OSSMafia/gh-ghs/internal/gitx"
+	"github.com/OSSMafia/gh-ghs/internal/paths"
+	"github.com/OSSMafia/gh-ghs/internal/registry"
 )
 
 const managedHeader = "# Managed by ghs. Do not edit — regenerated from config.toml.\n"

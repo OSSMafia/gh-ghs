@@ -5,10 +5,10 @@ package status
 import (
 	"strings"
 
-	"github.com/mattylight22/gh-ghs/internal/ghcli"
-	"github.com/mattylight22/gh-ghs/internal/gitx"
-	"github.com/mattylight22/gh-ghs/internal/paths"
-	"github.com/mattylight22/gh-ghs/internal/registry"
+	"github.com/OSSMafia/gh-ghs/internal/ghcli"
+	"github.com/OSSMafia/gh-ghs/internal/gitx"
+	"github.com/OSSMafia/gh-ghs/internal/paths"
+	"github.com/OSSMafia/gh-ghs/internal/registry"
 )
 
 // Level classifies the overall state.

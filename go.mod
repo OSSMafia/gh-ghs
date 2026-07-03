@@ -1,4 +1,4 @@
-module github.com/mattylight22/gh-ghs
+module github.com/OSSMafia/gh-ghs
 
 go 1.26.4
 

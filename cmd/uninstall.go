@@ -8,10 +8,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/mattylight22/gh-ghs/internal/gitcfg"
-	"github.com/mattylight22/gh-ghs/internal/gitx"
-	"github.com/mattylight22/gh-ghs/internal/output"
-	"github.com/mattylight22/gh-ghs/internal/paths"
+	"github.com/OSSMafia/gh-ghs/internal/gitcfg"
+	"github.com/OSSMafia/gh-ghs/internal/gitx"
+	"github.com/OSSMafia/gh-ghs/internal/output"
+	"github.com/OSSMafia/gh-ghs/internal/paths"
 )
 
 var (

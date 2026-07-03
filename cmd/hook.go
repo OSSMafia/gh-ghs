@@ -9,8 +9,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/mattylight22/gh-ghs/internal/output"
-	"github.com/mattylight22/gh-ghs/internal/status"
+	"github.com/OSSMafia/gh-ghs/internal/output"
+	"github.com/OSSMafia/gh-ghs/internal/status"
 )
 
 // pushOrCommitRe matches Bash commands that would commit or push. Broad on

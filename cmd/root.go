@@ -9,9 +9,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/mattylight22/gh-ghs/internal/ghcli"
-	"github.com/mattylight22/gh-ghs/internal/output"
-	"github.com/mattylight22/gh-ghs/internal/registry"
+	"github.com/OSSMafia/gh-ghs/internal/ghcli"
+	"github.com/OSSMafia/gh-ghs/internal/output"
+	"github.com/OSSMafia/gh-ghs/internal/registry"
 )
 
 var (

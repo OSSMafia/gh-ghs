@@ -11,7 +11,7 @@ import (
 
 	"github.com/pelletier/go-toml/v2"
 
-	"github.com/mattylight22/gh-ghs/internal/paths"
+	"github.com/OSSMafia/gh-ghs/internal/paths"
 )
 
 // Profile maps a friendly name to a GitHub account and git identity.

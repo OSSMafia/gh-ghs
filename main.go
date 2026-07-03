@@ -6,7 +6,7 @@ package main
 import (
 	"os"
 
-	"github.com/mattylight22/gh-ghs/cmd"
+	"github.com/OSSMafia/gh-ghs/cmd"
 )
 
 func main() {

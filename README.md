@@ -19,7 +19,7 @@ Now using work (matt-thesis <matt@use-thesis.com>)
 ## Install
 
 ```sh
-gh extension install <owner>/gh-ghs
+gh extension install OSSMafia/gh-ghs
 gh ghs link      # adds `ghs` and `git-ghs` symlinks -> bare `ghs` and `git ghs` work
 ```
 

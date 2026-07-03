@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/mattylight22/gh-ghs/internal/status"
+	"github.com/OSSMafia/gh-ghs/internal/status"
 )
 
 var flagPromptFormat string
